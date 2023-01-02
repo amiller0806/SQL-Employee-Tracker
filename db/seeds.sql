@@ -9,10 +9,10 @@ VALUES
 
 INSERT INTO roles (title, salary, department_id)
 VALUES
-("Manager", 100000, 1),
-("Manager", 100000, 2),
-("Manager", 100000, 3),
-("Manager", 100000, 4),
+("Sales Rep Manager", 100000, 1),
+("Marketing Manager", 100000, 2),
+("HR Manager", 100000, 3),
+("Administrative Manager", 100000, 4),
 ("Sales Rep", 100000, 1),
 ("Marketing Agent", 100000, 2),
 ("HR Representative", 90000, 3),
@@ -29,4 +29,3 @@ VALUES
 ("Marcus", "Mays", 6,2),
 ("Beverly", "Jones", 7,3),
 ("Lianna", "Jameson", 8, 4);
-

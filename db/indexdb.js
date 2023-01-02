@@ -10,8 +10,8 @@ class DB {
             password: '',
             database: 'employeetracker_db'
         });
-        
-        connection.connect(function(err) {
+
+        connection.connect(function (err) {
             if (err) throw (err);
         });
         this.connection = connection;
@@ -23,7 +23,7 @@ class DB {
         return this.connection.promise().query(
             "SELECT department.id, department.department_name FROM department;"
 
-        
+
         );
     }
 
@@ -35,7 +35,7 @@ class DB {
         return this.connection.promise().query(
             "SELECT roles.title, roles.id, roles.salary, roles.department_id FROM roles;"
 
-           
+
         );
     }
 
@@ -55,7 +55,6 @@ class DB {
     createRole(role) {
         return this.connection.promise().query("INSERT INTO roles(title, salary, department_id)VALUES(?,?,?);", role);
 
-
     }
 
     createEmployee(employee) {
@@ -64,13 +63,12 @@ class DB {
 
 
     updateEmployeeRole(employeeId, roleId) {
-        return this.connection.promise().query("UPDATE employee SET role_id = ? WHERE id = ?", employeeId, roleId);
+        console.log(`Emplo -${employeeId} Update role - ${roleId}`);
 
-    
-    
+        return this.connection.promise().query("UPDATE employee SET role_id = ? WHERE id= ?;", [roleId, employeeId])
+
+
     }
-
-
 
 }
 
