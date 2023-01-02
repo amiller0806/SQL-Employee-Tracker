@@ -45,7 +45,7 @@ There are no tests for this application
 [Github Repo](https://github.com/amiller0806/OOP-Team-profile-generator)
 
 ### Video of Application
-TODO: Enter VIDEO LINK
+https://drive.google.com/file/d/17jTbWLQb6_P_fsPvk9EDj2ZqUcGw4epn/view 
 
   ### Email
 ariel.miller555@gmail.com
